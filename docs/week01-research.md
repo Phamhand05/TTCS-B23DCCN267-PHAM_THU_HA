@@ -300,3 +300,16 @@ propertyN:valueN;}
   - border-color: Phải đi kèm với border-style
   - border-width:
   - border-style:
+
+
+## Quy tắc đặt tên BEM
+_BEM viết tắt của: Block — Element — Modifier._
+
+### 1. Cấu trúc cơ bản
+- Block (Khối): Một thành phần độc lập, có thể tái sử dụng (ví dụ: menu, button, card, form).
+- Element (Phần tử): Một phần nằm bên trong Block và không thể đứng tách rời khỏi Block đó. Cách viết: Block__Element (dùng 2 dấu gạch dưới).
+- Modifier (Trạng thái/Biến thể): Dùng để thay đổi hiển thị hoặc hành vi của Block hoặc Element (ví dụ: màu sắc khác, kích thước lớn hơn). Cách viết: Block--Modifier hoặc Block__Element--Modifier (dùng 2 dấu gạch ngang).
+
+### 2. Lưu ý quan trọng
+- Không nên lồng quá nhiều cấp như block__el1__el2. BEM khuyên bạn chỉ nên dừng lại ở 1 cấp Element: block__el2.
+- Dùng 2 dấu gạch dưới cho Element và 2 dấu gạch ngang cho Modifier để phân biệt rõ với dấu gạch ngang đơn - thường dùng nối từ (ví dụ: main-menu__item--active).
