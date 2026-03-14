@@ -1,4 +1,3 @@
-/* Reset CSS */
 * {
   margin: 0;
   padding: 0;
@@ -9,39 +8,34 @@ body {
   font-family: "Poppins", "sans-serif";
 }
 
-/* Block chính: Header */
 .header {
   width: 100%;
   background-color: #fff;
-  /* Tạo hiệu ứng dính ở đỉnh màn hình nếu muốn */
   position: sticky;
   top: 0;
   z-index: 1000;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
 
-/* Container giới hạn 1440px - Thay cho con1 của bạn */
 .header__container {
   max-width: 1440px;
   height: 100px;
-  margin: 0 auto; /* Căn giữa toàn bộ header ra giữa màn hình */
+  margin: 0 auto;
   display: flex;
-  justify-content: space-between; /* Đẩy Logo - Nav - Icons ra 3 đầu */
-  align-items: center; /* Căn giữa mọi thứ theo chiều dọc */
-  padding: 0 54px; /* Lề trái phải theo Figma */
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 54px;
 }
 
-/* Logo */
 .header__logo-img {
   display: block;
-  height: 40px; /* Điều chỉnh tùy theo ảnh của bạn */
+  height: 40px;
 }
 
-/* Cụm Menu */
 .header__list {
   display: flex;
   list-style: none;
-  gap: 45px; /* Khoảng cách giữa các mục menu cực đẹp bằng Gap */
+  gap: 45px;
 }
 
 .header__link {
@@ -56,17 +50,15 @@ body {
   color: #b88e2f;
 }
 
-/* Modifier cho trang hiện tại */
 .header__link--active {
   color: #b88e2f;
   font-weight: 600;
 }
 
-/* C cụm Icons */
 .header__icons {
   display: flex;
   align-items: center;
-  gap: 30px; /* Khoảng cách đều giữa các icon */
+  gap: 30px;
 }
 
 .header__icon-link {
@@ -76,41 +68,37 @@ body {
 }
 
 .header__icon-link:hover {
-  transform: scale(1.1); /* Hiệu ứng phóng to nhẹ khi di chuột */
+  transform: scale(1.1);
 }
 
 .header__icon-link img {
-  width: 28px; /* Tăng nhẹ kích thước icon cho dễ nhìn */
+  width: 28px;
   height: 28px;
 }
 
-/* Block: Hero */
 .hero {
-  /* Sử dụng ảnh bạn đã tải lên làm background */
   background-image: url("image/Mask Group.jpg");
-  background-size: cover; /* Ảnh phủ kín toàn bộ khung */
-  background-position: center; /* Ảnh luôn nằm giữa */
-  height: 716px; /* Chiều cao theo thiết kế Figma */
+  background-size: cover;
+  background-position: center;
+  height: 716px;
   display: flex;
-  align-items: center; /* Căn giữa hộp nội dung theo chiều dọc */
+  align-items: center;
 }
 
-/* Container để giới hạn chiều rộng 1440px giống Header */
 .hero__container {
   max-width: 1440px;
   width: 100%;
   margin: 0 auto;
   padding: 0 54px;
   display: flex;
-  justify-content: flex-end; /* Đẩy hộp nội dung sang bên PHẢI */
+  justify-content: flex-end;
 }
 
-/* Element: Content Box (Hộp màu kem) */
 .hero__content {
-  background-color: #fff3e3; /* Màu kem đặc trưng */
+  background-color: #fff3e3;
   padding: 62px 40px 37px 40px;
-  max-width: 643px; /* Độ rộng của hộp */
-  border-radius: 10px; /* Bo góc nhẹ */
+  max-width: 643px;
+  border-radius: 10px;
 }
 
 .hero__subtitle {
@@ -125,7 +113,7 @@ body {
   font-size: 52px;
   font-weight: 700;
   line-height: 65px;
-  color: #b88e2f; /* Màu vàng thương hiệu */
+  color: #b88e2f;
   margin-bottom: 17px;
 }
 
@@ -137,7 +125,6 @@ body {
   color: #333333;
 }
 
-/* Element: Button */
 .hero__button {
   background-color: #b88e2f;
   color: #fff;
@@ -150,11 +137,11 @@ body {
 }
 
 .hero__button:hover {
-  background-color: #967323; /* Đậm hơn một chút khi di chuột */
+  background-color: #967323;
 }
 
 .categories {
-  max-width: 1183px; /* Độ rộng nội dung thường dùng trong phần này */
+  max-width: 1183px;
   margin: 56px auto;
   padding: 0 20px;
 }
@@ -176,28 +163,27 @@ body {
   margin-top: 8px;
 }
 
-/* Dàn hàng 3 cột */
 .categories__list {
   display: flex;
   justify-content: space-between;
-  gap: 20px; /* Khoảng cách giữa các cột */
+  gap: 20px;
 }
 
 .categories__item {
-  flex: 1; /* Để 3 cột có độ rộng bằng nhau */
+  flex: 1;
   text-align: center;
 }
 
 .categories__img {
-  width: 100%; /* Ảnh co dãn theo khung cha */
-  height: 480px; /* Chiều cao cố định như trong Figma của bạn */
-  object-fit: cover; /* Giúp ảnh không bị méo khi co dãn */
-  border-radius: 10px; /* Bo góc ảnh */
+  width: 100%;
+  height: 480px;
+  object-fit: cover;
+  border-radius: 10px;
   transition: transform 0.3s ease;
 }
 
 .categories__img:hover {
-  transform: scale(1.02); /* Hiệu ứng zoom nhẹ khi di chuột */
+  transform: scale(1.02);
   cursor: pointer;
 }
 
@@ -214,14 +200,13 @@ body {
 
 .products__grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* Tạo 4 cột bằng nhau */
+  grid-template-columns: repeat(4, 1fr);
   gap: 32px;
   max-width: 1236px;
   margin: 40px auto;
   padding: 0 20px;
 }
 
-/* Thẻ sản phẩm */
 .product-card {
   background-color: #f4f5f7;
   position: relative;
@@ -239,7 +224,6 @@ body {
   display: block;
 }
 
-/* Lớp phủ Overlay (Ẩn mặc định) */
 .product-card__overlay {
   position: absolute;
   top: 0;
@@ -251,15 +235,14 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  opacity: 0; /* Ẩn đi */
+  opacity: 0;
   transition: 0.3s;
 }
 
 .product-card:hover .product-card__overlay {
-  opacity: 1; /* Hiện lên khi hover vào card */
+  opacity: 1;
 }
 
-/* Thông tin sản phẩm */
 .product-card__info {
   padding: 16px;
 }
@@ -286,7 +269,6 @@ body {
   margin-left: 10px;
 }
 
-/* Badge (Nhãn tròn) */
 .product-card__badge {
   position: absolute;
   top: 24px;
@@ -325,17 +307,17 @@ body {
   padding: 0 54px;
 }
 .categories__item {
-  flex: 1; /* Để các ô có độ rộng bằng nhau */
+  flex: 1;
   text-align: center;
 }
 .categories__img {
   width: 100%;
   border-radius: 8px;
-  object-fit: cover; /* Quan trọng để ảnh không bị méo */
+  object-fit: cover;
 }
 .products__grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 cột đều nhau */
+  grid-template-columns: repeat(4, 1fr);
   gap: 32px;
   padding: 0 54px;
   margin-top: 40px;
@@ -363,7 +345,7 @@ body {
 .inspiration {
   background-color: #fcf8f3;
   padding: 44px 0;
-  overflow: hidden; /* Cắt phần ảnh thừa tràn ra ngoài màn hình bên phải */
+  overflow: hidden;
 }
 
 .inspiration__container {
@@ -375,7 +357,6 @@ body {
   padding-left: 100px;
 }
 
-/* Phần chữ bên trái */
 .inspiration__content {
   flex: 0 0 422px;
 }
@@ -403,7 +384,6 @@ body {
   cursor: pointer;
 }
 
-/* Phần Slider bên phải */
 .inspiration__slider {
   display: flex;
   gap: 24px;
@@ -419,11 +399,10 @@ body {
 
 .inspiration__slide--sub .inspiration__img {
   width: 372px;
-  height: 486px; /* Ảnh thứ 2 thấp hơn ảnh thứ nhất */
+  height: 486px;
   object-fit: cover;
 }
 
-/* Nhãn Inner Peace đè lên ảnh */
 .inspiration__label {
   position: absolute;
   bottom: 24px;
@@ -446,11 +425,10 @@ body {
   justify-content: center;
 }
 
-/* Nút mũi tên trắng tròn */
 .inspiration__nav-btn {
   position: absolute;
   top: 50%;
-  left: -24px; /* Nằm đè lên giữa 2 ảnh */
+  left: -24px;
   transform: translateY(-50%);
   width: 48px;
   height: 48px;
@@ -463,7 +441,6 @@ body {
   font-weight: bold;
 }
 
-/* Dots */
 .inspiration__pagination {
   position: absolute;
   bottom: -40px;
@@ -482,7 +459,7 @@ body {
 .inspiration__dot--active {
   background: #b88e2f;
   outline: 1px solid #b88e2f;
-  outline-offset: 4px; /* Tạo vòng tròn hở bao quanh chấm */
+  outline-offset: 4px;
 }
 .footer {
   border-top: 1px solid rgba(0, 0, 0, 0.17);
@@ -499,7 +476,7 @@ body {
 }
 
 .footer__column--info {
-  flex: 0 0 285px; /* Cố định độ rộng cho cột thông tin địa chỉ */
+  flex: 0 0 285px;
 }
 
 .footer__logo {
@@ -543,7 +520,6 @@ body {
   color: #b88e2f;
 }
 
-/* Phần Newsletter */
 .footer__newsletter {
   display: flex;
   gap: 11px;
@@ -551,7 +527,7 @@ body {
 
 .footer__input {
   border: none;
-  border-bottom: 1px solid #000; /* Đường gạch chân dưới input */
+  border-bottom: 1px solid #000;
   padding-bottom: 3px;
   font-size: 14px;
   width: 200px;
@@ -561,7 +537,7 @@ body {
 .footer__subscribe {
   background: transparent;
   border: none;
-  border-bottom: 1px solid #000; /* Đường gạch chân dưới nút bấm */
+  border-bottom: 1px solid #000;
   font-weight: 500;
   font-size: 14px;
   cursor: pointer;
@@ -574,7 +550,6 @@ body {
   border-color: #b88e2f;
 }
 
-/* Bản quyền */
 .footer__bottom {
   max-width: 1440px;
   margin: 48px auto 0 auto;
