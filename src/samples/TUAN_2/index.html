@@ -1,0 +1,463 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>THỰC HÀNH CẮT GIAO DIỆN FIGMA</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container">
+        <div class="header__logo">
+          <img
+            src="image/Frame 168.png"
+            alt="Furniro"
+            class="header__logo-img"
+          />
+        </div>
+
+        <nav class="header__nav">
+          <ul class="header__list">
+            <li class="header__item">
+              <a href="index.html" class="header__link header__link--active"
+                >Home</a
+              >
+            </li>
+            <li class="header__item">
+              <a href="shop.html" class="header__link">Shop</a>
+            </li>
+            <li class="header__item">
+              <a href="about.html" class="header__link">About</a>
+            </li>
+            <li class="header__item">
+              <a href="contact.html" class="header__link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header__icons">
+          <a href="#user" class="header__icon-link"
+            ><img src="image/mdi_account-alert-outline.svg" alt="Account"
+          /></a>
+          <a href="#search" class="header__icon-link"
+            ><img src="image/akar-icons_search.svg" alt="Search"
+          /></a>
+          <a href="#wishlist" class="header__icon-link"
+            ><img src="image/akar-icons_heart.svg" alt="Wishlist"
+          /></a>
+          <a href="#cart" class="header__icon-link"
+            ><img src="image/ant-design_shopping-cart-outlined.svg" alt="Cart"
+          /></a>
+        </div>
+      </div>
+    </header>
+    <section class="hero">
+      <div class="hero__container">
+        <div class="hero__content">
+          <h6 class="hero__subtitle">New Arrival</h6>
+          <h1 class="hero__title">
+            Discover Our <br />
+            New Collection
+          </h1>
+          <p class="hero__description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+            tellus, luctus nec ullamcorper mattis.
+          </p>
+          <button class="hero__button">BUY NOW</button>
+        </div>
+      </div>
+    </section>
+    <section class="categories">
+      <div class="categories__header">
+        <h2 class="categories__title">Browse The Range</h2>
+        <p class="categories__subtitle">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </p>
+      </div>
+
+      <div class="categories__list">
+        <div class="categories__item">
+          <img src="image/image 106.jpg" alt="Dining" class="categories__img" />
+          <p class="categories__name">Dining</p>
+        </div>
+
+        <div class="categories__item">
+          <img
+            src="image/Image-living room.jpg"
+            alt="Living"
+            class="categories__img"
+          />
+          <p class="categories__name">Living</p>
+        </div>
+
+        <div class="categories__item">
+          <img
+            src="image/image 101.jpg"
+            alt="Bedroom"
+            class="categories__img"
+          />
+          <p class="categories__name">Bedroom</p>
+        </div>
+      </div>
+    </section>
+    <section class="products">
+      <h2 class="products__title">Our Products</h2>
+
+      <div class="products__grid">
+        <!-- SẢN PHẨM 1 -->
+        <div class="product-card">
+          <div class="product-card__badge product-card__badge--discount">
+            -30%
+          </div>
+
+          <div class="product-card__image-container">
+            <img
+              src="image/Images.jpg"
+              alt="Syltherine"
+              class="product-card__img"
+            />
+
+            <div class="product-card__overlay">
+              <button class="product-card__btn">Add to cart</button>
+              <div class="product-card__actions">
+                <span>Share</span>
+                <span>Compare</span>
+                <span>Like</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card__info">
+            <h3 class="product-card__name">Syltherine</h3>
+            <p class="product-card__sub">Stylish cafe chair</p>
+            <div class="product-card__price-container">
+              <span class="product-card__price">Rp 2.500.000</span>
+              <span class="product-card__price--old">Rp 3.500.000</span>
+            </div>
+          </div>
+        </div>
+        <!-- SẢN PHẨM 2 -->
+        <div class="product-card">
+          <div class="product-card__badge product-card__badge--discount">
+            -50%
+          </div>
+
+          <div class="product-card__image-container">
+            <img
+              src="image/Images (1).jpg"
+              alt="Syltherine"
+              class="product-card__img"
+            />
+
+            <div class="product-card__overlay">
+              <button class="product-card__btn">Add to cart</button>
+              <div class="product-card__actions">
+                <span>Share</span>
+                <span>Compare</span>
+                <span>Like</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card__info">
+            <h3 class="product-card__name">Syltherine</h3>
+            <p class="product-card__sub">Stylish cafe chair</p>
+            <div class="product-card__price-container">
+              <span class="product-card__price">Rp 2.500.000</span>
+              <span class="product-card__price--old">Rp 3.500.000</span>
+            </div>
+          </div>
+        </div>
+        <!-- SẢN PHẨM 3 -->
+        <div class="product-card">
+          <div class="product-card__badge product-card__badge--new">NEW</div>
+
+          <div class="product-card__image-container">
+            <img
+              src="image/Images (2).jpg"
+              alt="Syltherine"
+              class="product-card__img"
+            />
+
+            <div class="product-card__overlay">
+              <button class="product-card__btn">Add to cart</button>
+              <div class="product-card__actions">
+                <span>Share</span>
+                <span>Compare</span>
+                <span>Like</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card__info">
+            <h3 class="product-card__name">Syltherine</h3>
+            <p class="product-card__sub">Stylish cafe chair</p>
+            <div class="product-card__price-container">
+              <span class="product-card__price">Rp 2.500.000</span>
+              <span class="product-card__price--old">Rp 3.500.000</span>
+            </div>
+          </div>
+        </div>
+        <!-- SẢN PHẨM 4 -->
+        <div class="product-card">
+          <div class="product-card__badge product-card__badge--new">NEW</div>
+
+          <div class="product-card__image-container">
+            <img
+              src="image/Images (2).jpg"
+              alt="Syltherine"
+              class="product-card__img"
+            />
+
+            <div class="product-card__overlay">
+              <button class="product-card__btn">Add to cart</button>
+              <div class="product-card__actions">
+                <span>Share</span>
+                <span>Compare</span>
+                <span>Like</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card__info">
+            <h3 class="product-card__name">Syltherine</h3>
+            <p class="product-card__sub">Stylish cafe chair</p>
+            <div class="product-card__price-container">
+              <span class="product-card__price">Rp 2.500.000</span>
+              <span class="product-card__price--old">Rp 3.500.000</span>
+            </div>
+          </div>
+        </div>
+        <!-- SẢN PHẨM 5 -->
+        <div class="product-card">
+          <div class="product-card__badge product-card__badge--new">NEW</div>
+
+          <div class="product-card__image-container">
+            <img
+              src="image/Images (2).jpg"
+              alt="Syltherine"
+              class="product-card__img"
+            />
+
+            <div class="product-card__overlay">
+              <button class="product-card__btn">Add to cart</button>
+              <div class="product-card__actions">
+                <span>Share</span>
+                <span>Compare</span>
+                <span>Like</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card__info">
+            <h3 class="product-card__name">Syltherine</h3>
+            <p class="product-card__sub">Stylish cafe chair</p>
+            <div class="product-card__price-container">
+              <span class="product-card__price">Rp 2.500.000</span>
+              <span class="product-card__price--old">Rp 3.500.000</span>
+            </div>
+          </div>
+        </div>
+        <!-- SẢN PHẨM 6 -->
+        <div class="product-card">
+          <div class="product-card__badge product-card__badge--new">NEW</div>
+
+          <div class="product-card__image-container">
+            <img
+              src="image/Images (2).jpg"
+              alt="Syltherine"
+              class="product-card__img"
+            />
+
+            <div class="product-card__overlay">
+              <button class="product-card__btn">Add to cart</button>
+              <div class="product-card__actions">
+                <span>Share</span>
+                <span>Compare</span>
+                <span>Like</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card__info">
+            <h3 class="product-card__name">Syltherine</h3>
+            <p class="product-card__sub">Stylish cafe chair</p>
+            <div class="product-card__price-container">
+              <span class="product-card__price">Rp 2.500.000</span>
+              <span class="product-card__price--old">Rp 3.500.000</span>
+            </div>
+          </div>
+        </div>
+        <!-- SẢN PHẨM 7 -->
+        <div class="product-card">
+          <div class="product-card__badge product-card__badge--new">NEW</div>
+
+          <div class="product-card__image-container">
+            <img
+              src="image/Images (2).jpg"
+              alt="Syltherine"
+              class="product-card__img"
+            />
+
+            <div class="product-card__overlay">
+              <button class="product-card__btn">Add to cart</button>
+              <div class="product-card__actions">
+                <span>Share</span>
+                <span>Compare</span>
+                <span>Like</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card__info">
+            <h3 class="product-card__name">Syltherine</h3>
+            <p class="product-card__sub">Stylish cafe chair</p>
+            <div class="product-card__price-container">
+              <span class="product-card__price">Rp 2.500.000</span>
+              <span class="product-card__price--old">Rp 3.500.000</span>
+            </div>
+          </div>
+        </div>
+        <!-- SẢN PHẨM 8 -->
+        <div class="product-card">
+          <div class="product-card__badge product-card__badge--new">NEW</div>
+
+          <div class="product-card__image-container">
+            <img
+              src="image/Images (2).jpg"
+              alt="Syltherine"
+              class="product-card__img"
+            />
+
+            <div class="product-card__overlay">
+              <button class="product-card__btn">Add to cart</button>
+              <div class="product-card__actions">
+                <span>Share</span>
+                <span>Compare</span>
+                <span>Like</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card__info">
+            <h3 class="product-card__name">Syltherine</h3>
+            <p class="product-card__sub">Stylish cafe chair</p>
+            <div class="product-card__price-container">
+              <span class="product-card__price">Rp 2.500.000</span>
+              <span class="product-card__price--old">Rp 3.500.000</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="products__btn-more">Show More</button>
+    </section>
+    <!-- <section class="inspiration">
+      <div class="inspiration__container">
+        <div class="inspiration__content">
+          <h2 class="inspiration__title">50+ Beautiful rooms inspiration</h2>
+          <p class="inspiration__text">
+            Our designer already made a lot of beautiful prototypes of rooms
+            that inspire you
+          </p>
+          <button class="inspiration__btn">Explore More</button>
+        </div>
+
+        <div class="inspiration__slider">
+          <div class="inspiration__slide inspiration__slide--main">
+            <img
+              src="image/room-1.png"
+              alt="Bed Room"
+              class="inspiration__img"
+            />
+            <div class="inspiration__label">
+              <span class="inspiration__label-info">01 — Bed Room</span>
+              <h3 class="inspiration__label-name">Inner Peace</h3>
+              <div class="inspiration__label-icon">→</div>
+            </div>
+          </div>
+
+          <div class="inspiration__slide inspiration__slide--sub">
+            <img
+              src="image/room-2.png"
+              alt="Living Room"
+              class="inspiration__img"
+            />
+            <button class="inspiration__nav-btn">〉</button>
+          </div>
+
+          <div class="inspiration__pagination">
+            <div class="inspiration__dot inspiration__dot--active"></div>
+            <div class="inspiration__dot"></div>
+            <div class="inspiration__dot"></div>
+            <div class="inspiration__dot"></div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__column footer__column--info">
+          <h2 class="footer__logo">Funiro.</h2>
+          <address class="footer__address">
+            400 University Drive Suite 200 Coral Gables,<br />
+            FL 33134 USA
+          </address>
+        </div>
+
+        <div class="footer__column">
+          <h4 class="footer__title">Links</h4>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a href="#" class="footer__link">Home</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Shop</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">About</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__column">
+          <h4 class="footer__title">Help</h4>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a href="#" class="footer__link">Payment Options</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Returns</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Privacy Policies</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__column">
+          <h4 class="footer__title">Newsletter</h4>
+          <form class="footer__newsletter">
+            <input
+              type="email"
+              placeholder="Enter Your Email Address"
+              class="footer__input"
+            />
+            <button type="submit" class="footer__subscribe">SUBSCRIBE</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copyright">2023 furino. All rights reserved</p>
+      </div>
+    </footer>
+  </body>
+</html>
