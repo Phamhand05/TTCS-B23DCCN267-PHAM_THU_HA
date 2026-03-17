@@ -8,8 +8,8 @@
 - **MSSV: B23DCCN267**
 - **Lớp: B23DCCN01**
 - **Email: phamhand2005@gmail.com**
-- **GitHub username:**
-- **Link repository:**
+- **GitHub username: Phamhand05**
+- **Link repository: https://github.com/Phamhand05/TTCS-B23DCCN267-PHAM_THU_HA.git**
 
 ---
 
