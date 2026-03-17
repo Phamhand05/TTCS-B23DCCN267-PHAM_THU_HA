@@ -69,7 +69,7 @@ _Mục tiêu tuần: Nắm vững HTML5, CSS3, Box Model và quy tắc đặt t�
 |Slide HTML/CSS | | [X] | |
 | Semantic HTML| | [X] | |
 |CSS Selectors | | [X] | |
-|Box Model | | [ ] | |
+|Box Model | | [x] | |
 |BEM Methodology| | [X] | |
 
 **Thực hành:**
