@@ -94,6 +94,8 @@ _Mục tiêu tuần: Làm quen với Figma và chuyển đổi thiết kế thà
 |---|---|---|---|
 |Thực hiện cắt một khối giao diện (ví dụ: Hero Section hoặc Login Box) từ Figma sang code. |[https://docs.google.com/document/d/1Ncp_BOV7MUXS_5ADoBPnZ1Y85iybuBcOG3kc5tY4xlQ/edit?tab=t.0] | [X] | |
 
+**Trả lời câu hỏi: Frontend có phải xử lý dữ liệu?**
+- Frontend sẽ là người code giao diện và kiểm tra các dữ liệu đầu vào (vd: kiểm tra email có hợp lê,...), truyền dữ liệu về cho backend xử lý, lấy dữ liệu dạng thô từ backend(thường là json) xử lý hiển thị trở nên dễ nhìn hơn phù hợp với người dùng, tải về một danh sách lớn rồi tự thực hiện việc lọc hoặc sắp xếp ngay trên trình duyệt mà không cần gọi lại Backend.
 > **Chuẩn bị cho buổi trao đổi:**
 >
 > - Đã đọc / tìm hiểu được gì?
