@@ -127,6 +127,7 @@ a {
   height: 36px;
   line-height: 100%;
   letter-spacing: 0px;
+  margin-top: 30px;
 }
 .product-section {
   margin: 0 auto 69px auto;
@@ -154,6 +155,7 @@ a {
   background-color: #f4f5f7;
   padding-top: 16px;
   padding-left: 16px;
+  padding-bottom: 30px;
   width: 270px;
 }
 .product-intro__title {
@@ -182,6 +184,7 @@ a {
   line-height: 150%;
   letter-spacing: 0%;
   color: #3a3a3a;
+  /* margin-bottom: 30px; */
 }
 .product-section__container {
   display: flex;
@@ -196,6 +199,7 @@ a {
   border: 1px solid #b88e2f;
   width: 245px;
   height: 48px;
+  background-color: #fff;
 }
 .block__slide {
   width: 100%;
@@ -226,9 +230,6 @@ a {
   line-height: 120%;
   letter-spacing: 0%;
   color: #3a3a3a;
-}
-footer {
-  margin-bottom: 400px;
 }
 .footer-content {
   display: flex;
