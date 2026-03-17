@@ -144,12 +144,43 @@ a {
 }
 .product-card {
   margin-bottom: 32px;
+  position: relative;
 }
 .product-card img {
-  display: block;
+  display: block; /*dung de lam mat di khoang trang duoi anh*/
   width: 270px;
   height: 290px;
   margin-bottom: 0;
+}
+.btn-sale {
+  display: block;
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  border-radius: 100%;
+  border: none;
+  top: 24px;
+  right: 24px;
+  color: #fff;
+  background-color: #e97171;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn-new {
+  display: block;
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  border-radius: 100%;
+  border: none;
+  top: 24px;
+  right: 24px;
+  color: #fff;
+  background-color: #2ec1ac;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .product-intro {
   background-color: #f4f5f7;
@@ -200,6 +231,9 @@ a {
   width: 245px;
   height: 48px;
   background-color: #fff;
+}
+.product-card:hover {
+  background-color: #3a3a3a;
 }
 .block__slide {
   width: 100%;
