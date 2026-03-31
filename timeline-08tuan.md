@@ -123,6 +123,12 @@ _Mục tiêu tuần: Đảm bảo giao diện chạy tốt trên mọi thiết b
 
 ### Tuần 4 – Hoàn thiện giữa kỳ _(Buổi trao đổi 2)_
 
+| Nội dung                                        | Nguồn | Trạng thái | Ghi chú |
+| ----------------------------------------------- |-------| ---------- | ------- |
+| Tìm hiểu và đọc tiếp các mục kiến thức trước đó | [x]   |            |         |
+
+### Tuần 5 – Nâng cao / Tối ưu
+
 _Mục tiêu tuần: Bắt đầu tiếp cận JavaScript và hoàn thiện sản phẩm tĩnh._
 
 **Tìm hiểu / Đọc:**
@@ -143,7 +149,7 @@ _Mục tiêu tuần: Bắt đầu tiếp cận JavaScript và hoàn thiện sả
 
 ---
 
-### Tuần 5 – Nâng cao / Tối ưu
+### Tuần 6 – Kiểm thử & Đánh giá _(Buổi trao đổi 3)_
 
 _Mục tiêu tuần: Dùng JS để tạo tương tác cho giao diện_
 
@@ -162,7 +168,7 @@ _Mục tiêu tuần: Dùng JS để tạo tương tác cho giao diện_
 
 ---
 
-### Tuần 6 – Kiểm thử & Đánh giá _(Buổi trao đổi 3)_
+<!-- ### Tuần 6 – Kiểm thử & Đánh giá _(Buổi trao đổi 3)_
 
 _Mục tiêu tuần: Kiểm tra lỗi hiển thị và tối ưu hóa mã nguồn._
 
@@ -178,7 +184,7 @@ _Mục tiêu tuần: Kiểm tra lỗi hiển thị và tối ưu hóa mã nguồ
 |---|---|---|---|
 |Refactor lại code, sửa các lỗi vỡ khung (layout) trên các thiết bị đặc thù | | [ ] | |
 
----
+--- -->
 
 ### Tuần 7 – Hoàn thiện cuối
 

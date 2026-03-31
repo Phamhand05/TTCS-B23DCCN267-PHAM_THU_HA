@@ -182,6 +182,9 @@ a {
   align-items: center;
   justify-content: center;
 }
+/* .product-container {
+  margin: 0 102px;
+} */
 .product-intro {
   background-color: #f4f5f7;
   padding-top: 16px;
@@ -232,8 +235,72 @@ a {
   height: 48px;
   background-color: #fff;
 }
-.product-card:hover {
-  background-color: #3a3a3a;
+.product-card:hover .mouse-hover {
+  display: flex;
+  flex-direction: column; /* Xếp nút và các icon theo hàng dọc */
+  align-items: center; /* Căn giữa theo chiều ngang */
+  justify-content: center;
+}
+.product-section .mouse-hover {
+  position: absolute;
+  display: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  .pro-info_item img {
+    /* display: block; */
+    width: 16px;
+    height: 16px;
+  }
+  .pro-info_item span {
+    font-family: "Poppins";
+    font-size: 16px;
+    height: 24px;
+    font-weight: 600;
+    line-height: 150%;
+    letter-spacing: 0%;
+    color: #ffffff;
+  }
+}
+.pro-info_item {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+.mouse-hover button {
+  width: 202px;
+  height: 48px;
+  background-color: #fff;
+  border: none;
+  color: #b88e2f;
+  font-family: "Poppins";
+  font-size: 16px;
+  height: 24px;
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: 0%;
+  padding: 12px auto;
+  margin-bottom: 24px;
+}
+.pro-info {
+  display: flex;
+  gap: 20px;
+  /* align-items: center; */
+}
+/* Lớp phủ mặc định */
+.product-card__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(58, 58, 58, 0); /* Mặc định trong suốt */
+  transition: 0.3s;
+}
+
+/* Khi di chuột vào THẺ CHA, lớp phủ mới hiện màu xám */
+.product-card:hover .product-card__overlay {
+  background-color: rgba(58, 58, 58, 0.72); /* Màu xám đục như mẫu */
 }
 .block__slide {
   width: 100%;
@@ -264,6 +331,146 @@ a {
   line-height: 120%;
   letter-spacing: 0%;
   color: #3a3a3a;
+}
+/* 
+.share__img {
+  position: relative;
+  width: 100%;
+  height: 721px;
+  // gap: 16px; 
+  overflow: hidden;
+}
+.share__img--item1 {
+  position: absolute;
+  height: 382px;
+  width: 274px;
+  top: 0px;
+  left: -196px;
+}
+.share__img--item2 {
+  position: absolute;
+  top: 70px;
+  height: 312px;
+  width: 381px;
+  left: 94px;
+}
+.share__img--item3 {
+  position: absolute;
+  top: 156px;
+  height: 392px;
+  width: 245px;
+  left: 501px;
+}
+.share__img--item4 {
+  position: absolute;
+  top: 99px;
+  height: 348px;
+  width: 240px;
+  left: 772px;
+}
+.share__img--item5 {
+  position: absolute;
+  top: 14px;
+  height: 433px;
+  width: 375px;
+  left: 1028px;
+  right: -100px;
+}
+.share__img--item6 {
+  position: absolute;
+  bottom: 0px;
+  left: -176px;
+  height: 323px;
+  width: 331px;
+}
+.share__img--item7 {
+  position: absolute;
+  bottom: 81px;
+  left: 171px;
+  height: 242px;
+  width: 294px;
+}
+.share__img--item8 {
+  position: absolute;
+  bottom: 16px;
+  left: 792px;
+  height: 242px;
+  width: 178px;
+}
+.share__img--item9 {
+  position: absolute;
+  bottom: 62px;
+  left: 996px;
+  height: 196px;
+  width: 208px;
+}
+ */
+.share__img {
+  display: flex;
+  gap: 16px;
+  overflow: hidden;
+  height: 721px;
+}
+.share__left,
+.share__right {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.share__left--h1,
+.share__left--h2,
+.share__right-h1,
+.share__right-h2 {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+.share__left--h1,
+.share__right-h1 {
+  align-items: flex-end;
+}
+.share__center {
+  display: flex;
+  align-items: center;
+}
+.share__img--item1 {
+  height: 382px;
+  width: 274px;
+  margin-left: -196px;
+}
+.share__img--item2 {
+  height: 312px;
+  width: 381px;
+}
+.share__img--item3 {
+  height: 392px;
+  width: 245px;
+}
+.share__img--item4 {
+  height: 348px;
+  width: 240px;
+}
+.share__img--item5 {
+  height: 433px;
+  width: 375px;
+  margin-right: -100px;
+}
+.share__img--item6 {
+  height: 323px;
+  width: 331px;
+  margin-left: -176px;
+}
+.share__img--item7 {
+  height: 242px;
+  width: 294px;
+}
+.share__img--item8 {
+  height: 242px;
+  width: 178px;
+}
+.share__img--item9 {
+  height: 196px;
+  width: 208px;
 }
 .footer-content {
   display: flex;
