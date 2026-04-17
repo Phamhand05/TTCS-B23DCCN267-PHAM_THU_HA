@@ -119,7 +119,7 @@ _Mục tiêu tuần: Đảm bảo giao diện chạy tốt trên mọi thiết b
 **Thực hành:**
 | Nhiệm vụ | Kết quả đầu ra | Trạng thái | Ghi chú |
 |---|---|---|---|
-|Áp dụng Responsive cho giao diện đã làm ở tuần 2, kiểm tra trên các kích thước màn hình khác nhau. | | [x] | |
+|Áp dụng Responsive cho giao diện đã làm ở tuần 2, kiểm tra trên các kích thước màn hình khác nhau. | [https://docs.google.com/document/d/1o6MX2fzCy1mk4TUV26hkLudGZ6DFj6y2RF4qNCfnwxs/edit?usp=sharing] | [x] | |
 
 ---
 
