@@ -95,12 +95,13 @@ _Mục tiêu tuần: Làm quen với Figma và chuyển đổi thiết kế thà
 |Thực hiện cắt một khối giao diện (ví dụ: Hero Section hoặc Login Box) từ Figma sang code. |[https://docs.google.com/document/d/1Ncp_BOV7MUXS_5ADoBPnZ1Y85iybuBcOG3kc5tY4xlQ/edit?tab=t.0] | [X] | |
 
 **Trả lời câu hỏi: Frontend có phải xử lý dữ liệu?**
+
 - Frontend sẽ là người code giao diện và kiểm tra các dữ liệu đầu vào (vd: kiểm tra email có hợp lê,...), truyền dữ liệu về cho backend xử lý, lấy dữ liệu dạng thô từ backend(thường là json) xử lý hiển thị trở nên dễ nhìn hơn phù hợp với người dùng, tải về một danh sách lớn rồi tự thực hiện việc lọc hoặc sắp xếp ngay trên trình duyệt mà không cần gọi lại Backend.
-> **Chuẩn bị cho buổi trao đổi:**
->
-> - Đã đọc / tìm hiểu được gì?
-> - Đã thực hành được gì? (link / file)
-> - Vướng mắc ở đâu? Đã thử giải quyết chưa?
+  > **Chuẩn bị cho buổi trao đổi:**
+  >
+  > - Đã đọc / tìm hiểu được gì?
+  > - Đã thực hành được gì? (link / file)
+  > - Vướng mắc ở đâu? Đã thử giải quyết chưa?
 
 ---
 
@@ -113,20 +114,20 @@ _Mục tiêu tuần: Đảm bảo giao diện chạy tốt trên mọi thiết b
 |---|---|---|---|
 |Viewport| | [X] | |
 |Media Queries | | [X] | |
-|Mobile-first design | | [ ] | |
+|Mobile-first design | | [x] | |
 |Đơn vị tương đối (rem, em, vh, vw) | | [X] | |
 
 **Thực hành:**
 | Nhiệm vụ | Kết quả đầu ra | Trạng thái | Ghi chú |
 |---|---|---|---|
-|Áp dụng Responsive cho giao diện đã làm ở tuần 2, kiểm tra trên các kích thước màn hình khác nhau. | | [ ] | |
+|Áp dụng Responsive cho giao diện đã làm ở tuần 2, kiểm tra trên các kích thước màn hình khác nhau. | | [x] | |
 
 ---
 
 ### Tuần 4 – Hoàn thiện giữa kỳ _(Buổi trao đổi 2)_
 
 | Nội dung                                        | Nguồn | Trạng thái | Ghi chú |
-| ----------------------------------------------- |-------| ---------- | ------- |
+| ----------------------------------------------- | ----- | ---------- | ------- |
 | Tìm hiểu và đọc tiếp các mục kiến thức trước đó | [x]   |            |         |
 
 ### Tuần 5 – Nâng cao / Tối ưu
@@ -136,12 +137,12 @@ _Mục tiêu tuần: Bắt đầu tiếp cận JavaScript và hoàn thiện sả
 **Tìm hiểu / Đọc:**
 | Nội dung | Nguồn | Trạng thái | Ghi chú |
 |---|---|---|---|
-|Biến, kiểu dữ liệu, toán tử, hàm (function) trong JavaScript | | [ ] | |
+|Biến, kiểu dữ liệu, toán tử, hàm (function) trong JavaScript | | [] | Mới tìm hiểu sơ qua |
 
 **Thực hành:**
 | Nhiệm vụ | Kết quả đầu ra | Trạng thái | Ghi chú |
 |---|---|---|---|
-|Viết các đoạn script nhỏ để thực hiện phép tính cơ bản hoặc thay đổi màu sắc phần tử. | | [ ] | |
+|Viết các đoạn script nhỏ để thực hiện phép tính cơ bản hoặc thay đổi màu sắc phần tử. | | [X] | |
 
 > **Tự đánh giá giữa kỳ:**
 >
