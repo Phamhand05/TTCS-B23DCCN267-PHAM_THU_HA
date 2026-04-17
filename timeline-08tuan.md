@@ -114,7 +114,6 @@ _Mục tiêu tuần: Đảm bảo giao diện chạy tốt trên mọi thiết b
 |---|---|---|---|
 |Viewport| | [X] | |
 |Media Queries | | [X] | |
-|Mobile-first design | | [x] | |
 |Đơn vị tương đối (rem, em, vh, vw) | | [X] | |
 
 **Thực hành:**
