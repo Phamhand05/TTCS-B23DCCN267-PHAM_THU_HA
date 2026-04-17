@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+  <body>
+    Nhập gì đó: <input type="text" id="myInput" />
+    <p>Kết quả Keyup: <span id="txtKeyUp"></span></p>
+    <p>Kết quả Change: <span id="txtChange"></span></p>
+
+    <script>
+      let inp = document.getElementById("myInput");
+
+      // Keyup: Chữ hiện ra ngay lập tức khi vừa buông phím
+      inp.onkeyup = function () {
+        document.getElementById("txtKeyUp").innerHTML = inp.value;
+      };
+
+      // Change: Chỉ hiện khi bạn gõ xong và nhấn chuột ra chỗ khác
+      inp.onchange = function () {
+        document.getElementById("txtChange").innerHTML = inp.value;
+      };
+
+      // Ngăn chặn dán (Paste) vào ô này
+      inp.onpaste = function () {
+        alert("Vui lòng tự gõ, không được dán!");
+        return false; // Lệnh này để ngăn hành động dán diễn ra
+      };
+    </script>
+  </body>
+</html>
