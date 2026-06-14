@@ -1,0 +1,137 @@
+USE CONTRIBUTOR_PAGES;
+
+-- Xóa dữ liệu cũ để tránh trùng lặp
+SET FOREIGN_KEY_CHECKS = 0;
+TRUNCATE TABLE Contribution;
+TRUNCATE TABLE Contributor;
+TRUNCATE TABLE Activity;
+TRUNCATE TABLE ContributorType;
+SET FOREIGN_KEY_CHECKS = 1;
+
+-- 1. Bảng loại người đóng góp
+INSERT INTO ContributorType(TypeID, TypeName)
+VALUES
+(1, 'Ban tổ chức'),
+(2, 'Tình nguyện viên'),
+(3, 'Nhà tài trợ'),
+(4, 'Nhà hảo tâm');
+
+-- 2. Bảng người đóng góp
+-- Ban tổ chức (TypeID = 1)
+INSERT INTO Contributor (ContributorID, FullName, Avatar, Email, Phone, JoinDate, Description, OrganizationName, TypeID)
+VALUES
+(1, 'Nguyễn Văn An', 'an.jpg', 'an@anhsangyeuthuong.vn', '0901000001', '2023-01-10', 'Trưởng dự án', NULL, 1),
+(2, 'Trần Thị Mai', 'mai.jpg', 'mai@anhsangyeuthuong.vn', '0901000002', '2023-02-15', 'Phó dự án', NULL, 1),
+(3, 'Lê Quốc Bảo', 'bao.jpg', 'bao@anhsangyeuthuong.vn', '0901000003', '2023-03-20', 'Truyền thông', NULL, 1),
+(4, 'Phạm Ngọc Lan', 'lan.jpg', 'lan@anhsangyeuthuong.vn', '0901000004', '2023-04-10', 'Đối ngoại', NULL, 1),
+(5, 'Hoàng Minh Đức', 'duc.jpg', 'duc@anhsangyeuthuong.vn', '0901000005', '2023-05-12', 'Tài chính', NULL, 1);
+
+-- Tình nguyện viên (TypeID = 2)
+INSERT INTO Contributor (ContributorID, FullName, Avatar, Email, Phone, JoinDate, Description, OrganizationName, TypeID)
+VALUES
+(6, 'Nguyễn Thị Hương', 'huong.jpg', 'huong@gmail.com', '0902000001', '2024-01-05', 'Tình nguyện viên', NULL, 2),
+(7, 'Phạm Minh Tuấn', 'tuan.jpg', 'tuan@gmail.com', '0902000002', '2024-01-10', 'Tình nguyện viên', NULL, 2),
+(8, 'Lê Thị Kim Ngân', 'ngan.jpg', 'ngan@gmail.com', '0902000003', '2024-02-12', 'Tình nguyện viên', NULL, 2),
+(9, 'Đỗ Anh Khoa', 'khoa.jpg', 'khoa@gmail.com', '0902000004', '2024-03-01', 'Tình nguyện viên', NULL, 2);
+
+-- Nhà tài trợ (TypeID = 3)
+INSERT INTO Contributor (ContributorID, FullName, Avatar, Email, Phone, JoinDate, Description, OrganizationName, TypeID)
+VALUES
+(10, NULL, 'vietcombank.png', 'contact@vietcombank.com', '0241000001', '2025-01-01', 'Tài trợ tài chính', 'Vietcombank', 3),
+(11, NULL, 'fpt.png', 'contact@fpt.com', '0241000002', '2025-01-02', 'Tài trợ công nghệ', 'FPT', 3),
+(12, NULL, 'vinamilk.png', 'contact@vinamilk.com', '0241000003', '2025-01-03', 'Tài trợ hiện vật', 'Vinamilk', 3),
+(13, NULL, 'bidv.png', 'contact@bidv.com', '0241000004', '2025-01-04', 'Tài trợ tài chính', 'BIDV', 3),
+(14, NULL, 'thtruemilk.png', 'contact@thtruemilk.com', '0241000005', '2025-01-05', 'Tài trợ hiện vật', 'TH*true MILK', 3),
+(15, NULL, 'pnj.png', 'contact@pnj.com', '0241000006', '2025-01-06', 'Tài trợ hiện vật', 'PNJ', 3),
+(16, NULL, 'shopee.png', 'contact@shopee.com', '0241000007', '2025-01-07', 'Tài trợ công nghệ', 'Shopee', 3),
+(17, NULL, 'baominh.png', 'contact@baominh.com', '0241000008', '2025-01-08', 'Đồng hành bảo trợ', 'BẢO MINH', 3);
+
+-- Nhà hảo tâm (TypeID = 4)
+INSERT INTO Contributor (ContributorID, FullName, Avatar, Email, Phone, JoinDate, Description, OrganizationName, TypeID)
+VALUES
+(18, 'Nguyễn Hoàng Nam', 'nam1.jpg', 'nam1@gmail.com', '0903000001', '2024-05-01', 'Nhà hảo tâm', NULL, 4),
+(19, 'Trần Đức Thịnh', 'thinh.jpg', 'thinh@gmail.com', '0903000002', '2024-05-15', 'Nhà hảo tâm', NULL, 4),
+(20, 'Lê Thị Thanh Tâm', 'tam.jpg', 'tam@gmail.com', '0903000003', '2024-06-01', 'Nhà hảo tâm', NULL, 4),
+(21, 'Phạm Quang Huy', 'huy1.jpg', 'huy1@gmail.com', '0903000004', '2024-06-20', 'Nhà hảo tâm', NULL, 4),
+(22, 'Vũ Minh Châu', 'chau.jpg', 'chau@gmail.com', '0903000005', '2024-07-05', 'Nhà hảo tâm', NULL, 4),
+(23, 'Ngô Thùy Dương', 'duong.jpg', 'duong@gmail.com', '0903000006', '2024-07-10', 'Nhà hảo tâm', NULL, 4);
+
+-- 3. Bảng hoạt động (để liên kết đếm số hoạt động)
+INSERT INTO Activity (ActivityID, ActivityName, Location, ActivityDate, Description, Image)
+VALUES
+(1, 'Mùa Đông Ấm 2025', 'Hà Giang', '2025-01-15', 'Trao quà', 'act1.jpg'),
+(2, 'Tiếp Sức Đến Trường', 'Sơn La', '2025-02-10', 'Hỗ trợ sách vở', 'act2.jpg'),
+(3, 'Xuân Yêu Thương', 'Lào Cai', '2025-03-05', 'Tặng quà Tết', 'act3.jpg'),
+(4, 'Ngày Chủ Nhật Xanh', 'Hà Nội', '2025-03-20', 'Vệ sinh môi trường', 'act4.jpg'),
+(5, 'Hiến Máu Nhân Đạo', 'Hà Nội', '2025-04-10', 'Hiến máu', 'act5.jpg'),
+(6, 'Thắp Sáng Ước Mơ', 'Bắc Kạn', '2025-05-01', 'Học bổng', 'act6.jpg'),
+(7, 'Mùa Hè Xanh', 'Thanh Hóa', '2025-06-15', 'Tình nguyện hè', 'act7.jpg'),
+(8, 'Trung Thu Cho Em', 'Nam Định', '2025-07-25', 'Trung thu', 'act8.jpg'),
+(9, 'Áo Ấm Mùa Đông', 'Cao Bằng', '2025-08-18', 'Áo ấm', 'act9.jpg'),
+(10, 'Nâng Bước Em Tới Trường', 'Yên Bái', '2025-09-01', 'Sách vở', 'act10.jpg'),
+(11, 'Bữa Cơm Yêu Thương', 'Hà Nội', '2025-09-20', 'Phát cơm', 'act11.jpg'),
+(12, 'Tết Cho Người Nghèo', 'Nghệ An', '2025-10-10', 'Quà Tết', 'act12.jpg'),
+(13, 'Ngày Hội Thiếu Nhi', 'Hải Phòng', '2025-11-05', 'Thiếu nhi', 'act13.jpg'),
+(14, 'Chung Tay Vì Cộng Đồng', 'Hà Nam', '2025-11-20', 'Thiện nguyện', 'act14.jpg'),
+(15, 'Xuân Biên Giới', 'Lạng Sơn', '2025-12-15', 'Tặng quà', 'act15.jpg');
+
+-- 4. Bảng đóng góp/tham gia hoạt động (Contribution)
+-- Tình nguyện viên 6: tham gia 12 hoạt động
+INSERT INTO Contribution (ContributorID, ActivityID, RoleInActivity, HoursParticipated, ContributionAmount, ContributionType, ContributionDate) VALUES
+(6, 1, 'Tình nguyện viên', 10, 0, 'Công sức', '2025-01-15'),
+(6, 2, 'Tình nguyện viên', 10, 0, 'Công sức', '2025-02-10'),
+(6, 3, 'Tình nguyện viên', 10, 0, 'Công sức', '2025-03-05'),
+(6, 4, 'Tình nguyện viên', 10, 0, 'Công sức', '2025-03-20'),
+(6, 5, 'Tình nguyện viên', 10, 0, 'Công sức', '2025-04-10'),
+(6, 6, 'Tình nguyện viên', 10, 0, 'Công sức', '2025-05-01'),
+(6, 7, 'Tình nguyện viên', 10, 0, 'Công sức', '2025-06-15'),
+(6, 8, 'Tình nguyện viên', 10, 0, 'Công sức', '2025-07-25'),
+(6, 9, 'Tình nguyện viên', 10, 0, 'Công sức', '2025-08-18'),
+(6, 10, 'Tình nguyện viên', 10, 0, 'Công sức', '2025-09-01'),
+(6, 11, 'Tình nguyện viên', 10, 0, 'Công sức', '2025-09-20'),
+(6, 12, 'Tình nguyện viên', 10, 0, 'Công sức', '2025-10-10');
+
+-- Tình nguyện viên 7: tham gia 10 hoạt động
+INSERT INTO Contribution (ContributorID, ActivityID, RoleInActivity, HoursParticipated, ContributionAmount, ContributionType, ContributionDate) VALUES
+(7, 1, 'Tình nguyện viên', 10, 0, 'Công sức', '2025-01-15'),
+(7, 2, 'Tình nguyện viên', 10, 0, 'Công sức', '2025-02-10'),
+(7, 3, 'Tình nguyện viên', 10, 0, 'Công sức', '2025-03-05'),
+(7, 4, 'Tình nguyện viên', 10, 0, 'Công sức', '2025-03-20'),
+(7, 5, 'Tình nguyện viên', 10, 0, 'Công sức', '2025-04-10'),
+(7, 6, 'Tình nguyện viên', 10, 0, 'Công sức', '2025-05-01'),
+(7, 7, 'Tình nguyện viên', 10, 0, 'Công sức', '2025-06-15'),
+(7, 8, 'Tình nguyện viên', 10, 0, 'Công sức', '2025-07-25'),
+(7, 9, 'Tình nguyện viên', 10, 0, 'Công sức', '2025-08-18'),
+(7, 10, 'Tình nguyện viên', 10, 0, 'Công sức', '2025-09-01');
+
+-- Tình nguyện viên 8: tham gia 9 hoạt động
+INSERT INTO Contribution (ContributorID, ActivityID, RoleInActivity, HoursParticipated, ContributionAmount, ContributionType, ContributionDate) VALUES
+(8, 1, 'Tình nguyện viên', 10, 0, 'Công sức', '2025-01-15'),
+(8, 2, 'Tình nguyện viên', 10, 0, 'Công sức', '2025-02-10'),
+(8, 3, 'Tình nguyện viên', 10, 0, 'Công sức', '2025-03-05'),
+(8, 4, 'Tình nguyện viên', 10, 0, 'Công sức', '2025-03-20'),
+(8, 5, 'Tình nguyện viên', 10, 0, 'Công sức', '2025-04-10'),
+(8, 6, 'Tình nguyện viên', 10, 0, 'Công sức', '2025-05-01'),
+(8, 7, 'Tình nguyện viên', 10, 0, 'Công sức', '2025-06-15'),
+(8, 8, 'Tình nguyện viên', 10, 0, 'Công sức', '2025-07-25'),
+(8, 9, 'Tình nguyện viên', 10, 0, 'Công sức', '2025-08-18');
+
+-- Tình nguyện viên 9: tham gia 8 hoạt động
+INSERT INTO Contribution (ContributorID, ActivityID, RoleInActivity, HoursParticipated, ContributionAmount, ContributionType, ContributionDate) VALUES
+(9, 1, 'Tình nguyện viên', 10, 0, 'Công sức', '2025-01-15'),
+(9, 2, 'Tình nguyện viên', 10, 0, 'Công sức', '2025-02-10'),
+(9, 3, 'Tình nguyện viên', 10, 0, 'Công sức', '2025-03-05'),
+(9, 4, 'Tình nguyện viên', 10, 0, 'Công sức', '2025-03-20'),
+(9, 5, 'Tình nguyện viên', 10, 0, 'Công sức', '2025-04-10'),
+(9, 6, 'Tình nguyện viên', 10, 0, 'Công sức', '2025-05-01'),
+(9, 7, 'Tình nguyện viên', 10, 0, 'Công sức', '2025-06-15'),
+(9, 8, 'Tình nguyện viên', 10, 0, 'Công sức', '2025-07-25');
+
+-- Quyên góp của các Nhà hảo tâm
+INSERT INTO Contribution (ContributorID, ActivityID, RoleInActivity, HoursParticipated, ContributionAmount, ContributionType, ContributionDate) VALUES
+(18, 1, 'Nhà hảo tâm', 0, 50000000, 'Tiền mặt', '2025-01-15'),
+(19, 1, 'Nhà hảo tâm', 0, 30000000, 'Tiền mặt', '2025-01-15'),
+(20, 1, 'Nhà hảo tâm', 0, 20000000, 'Tiền mặt', '2025-01-15'),
+(21, 1, 'Nhà hảo tâm', 0, 15000000, 'Tiền mặt', '2025-01-15'),
+(22, 1, 'Nhà hảo tâm', 0, 10000000, 'Tiền mặt', '2025-01-15'),
+(23, 1, 'Nhà hảo tâm', 0, 10000000, 'Tiền mặt', '2025-01-15');

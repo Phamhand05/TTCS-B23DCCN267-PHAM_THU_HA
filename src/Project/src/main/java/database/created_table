@@ -1,0 +1,68 @@
+
+create database CONTRIBUTOR_PAGES;
+USE CONTRIBUTOR_PAGES;
+
+-- =====================================
+-- 1. Bảng loại người đóng góp
+
+CREATE TABLE ContributorType (
+    TypeID INT AUTO_INCREMENT PRIMARY KEY,
+    TypeName VARCHAR(50) NOT NULL
+);
+
+-- =====================================
+-- 2. Bảng người đóng góp
+
+CREATE TABLE Contributor (
+    ContributorID INT AUTO_INCREMENT PRIMARY KEY,
+    FullName VARCHAR(100),
+    Avatar VARCHAR(255),
+    Email VARCHAR(100) UNIQUE,
+    Phone VARCHAR(15),
+    JoinDate DATE,
+    Description TEXT,
+    OrganizationName VARCHAR(100),
+    TypeID INT NOT NULL,
+
+    CONSTRAINT FK_Contributor_Type
+    FOREIGN KEY (TypeID)
+    REFERENCES ContributorType(TypeID)
+);
+
+-- =====================================
+-- 3. Bảng hoạt động
+
+CREATE TABLE Activity (
+    ActivityID INT AUTO_INCREMENT PRIMARY KEY,
+    ActivityName VARCHAR(100) NOT NULL,
+    Location VARCHAR(100),
+    ActivityDate DATE,
+    Description TEXT,
+    Image VARCHAR(255)
+);
+
+-- =====================================
+-- 4. Bảng tham gia hoạt động
+
+CREATE TABLE Contribution (
+    ContributionID INT AUTO_INCREMENT PRIMARY KEY,
+
+    ContributorID INT NOT NULL,
+    ActivityID INT NOT NULL,
+
+    RoleInActivity VARCHAR(100),
+
+    HoursParticipated INT DEFAULT 0,
+
+    ContributionAmount DECIMAL(15,2) DEFAULT 0,
+
+    ContributionType VARCHAR(50),
+
+    ContributionDate DATE,
+
+    FOREIGN KEY (ContributorID)
+        REFERENCES Contributor(ContributorID),
+
+    FOREIGN KEY (ActivityID)
+        REFERENCES Activity(ActivityID)
+);

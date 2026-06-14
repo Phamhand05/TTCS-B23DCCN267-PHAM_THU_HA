@@ -1,0 +1,297 @@
+/* ===== STYLE CHO TRANG BAN TỔ CHỨC (bantochuc.jsp) ===== */
+.page-content {
+  padding: 40px 0 70px;
+  background-color: #f7faf8;
+}
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: #7f8c8d;
+  margin-bottom: 24px;
+}
+
+.breadcrumb a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.breadcrumb a:hover {
+  color: #1f8a4d;
+}
+
+.breadcrumb .divider {
+  color: #bdc3c7;
+}
+
+.breadcrumb .active {
+  color: #7f8c8d;
+}
+
+.breadcrumb .active.bold {
+  font-weight: 700;
+  color: #1f8a4d;
+}
+
+.page-heading-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.heading-info {
+  flex: 1;
+}
+
+.page-title {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #0f4224;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.heart-outline {
+  font-size: 1.5rem;
+}
+
+.page-subtitle {
+  font-size: 0.95rem;
+  color: #66756c;
+  margin-top: 8px;
+}
+
+.page-stats-container {
+  display: flex;
+  gap: 16px;
+  background: #ffffff;
+  border-radius: 16px;
+  border: 1px solid #ebf2ee;
+  padding: 16px 24px;
+  box-shadow: 0 10px 30px rgba(31, 138, 77, 0.02);
+}
+
+.page-stat-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 20px;
+  border-right: 1px solid #ebf2ee;
+}
+
+.page-stat-item:last-child {
+  border-right: none;
+}
+
+.stat-icon-wrapper {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px 20px;
+}
+
+.stat-icon-wrapper::before {
+  display: none;
+}
+
+.green-theme .stat-icon-wrapper {
+  background: #e3f7eb;
+  color: #1f8a4d;
+  background-image: url("../images/contributors-icon.svg");
+}
+
+.green-theme .stat-val {
+  color: #1f8a4d;
+}
+
+.blue-theme .stat-icon-wrapper {
+  background: #e3f0f7;
+  color: #2980b9;
+  background-image: url("../images/sponsors-icon.svg");
+}
+
+.blue-theme .stat-val {
+  color: #2980b9;
+}
+
+.orange-theme .stat-icon-wrapper {
+  background: #f7ede3;
+  color: #e67e22;
+  background-image: url("../images/clock-icon.svg");
+}
+
+.orange-theme .stat-val {
+  color: #e67e22;
+}
+
+.stat-info-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-val {
+  font-size: 1.3rem;
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.stat-lbl {
+  font-size: 11px;
+  color: #7f8c8d;
+  margin-top: 3px;
+  white-space: nowrap;
+}
+
+/* Grid hiển thị tất cả Ban tổ chức */
+.organizers-page-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.organizer-page-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 26px 16px 20px;
+  background: #ffffff;
+  border: 1px solid #ebf2ee;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
+  transition: all 0.3s ease;
+}
+
+.organizer-page-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(31, 138, 77, 0.08);
+  border-color: rgba(31, 138, 77, 0.2);
+}
+
+.organizer-page-card .organizer-avatar-wrapper {
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+  margin-bottom: 12px;
+  flex-shrink: 0;
+}
+
+.organizer-page-card .organizer-avatar {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.organizer-page-card .organizer-name {
+  margin: 0;
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: #1f8a4d;
+}
+
+.organizer-role-label {
+  margin: 6px 0 15px 0;
+  font-size: 0.82rem;
+  color: #7f8c8d;
+  font-weight: 500;
+}
+
+.organizer-page-stats {
+  display: flex;
+  width: 100%;
+  border-top: 1px solid #f2f5f3;
+  padding-top: 15px;
+  margin-top: auto;
+}
+
+.organizer-page-stats .stat-col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-right: 1px solid #f2f5f3;
+}
+
+.organizer-page-stats .stat-col:last-child {
+  border-right: none;
+}
+
+.organizer-page-stats .stat-number {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #2c3e50;
+  line-height: 1.1;
+}
+
+.organizer-page-stats .stat-col:first-child .stat-number {
+  color: #1f8a4d;
+}
+
+.organizer-page-stats .stat-label {
+  font-size: 10px;
+  color: #95a5a6;
+  margin-top: 4px;
+}
+
+/* Bổ sung Responsive cho trang Ban tổ chức */
+@media (max-width: 1200px) {
+  .organizers-page-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 992px) {
+  .page-heading-block {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 20px;
+  }
+
+  .organizers-page-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .page-stats-container {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .page-stat-item {
+    border-right: none;
+    border-bottom: 1px solid #ebf2ee;
+    padding: 10px 0;
+  }
+
+  .page-stat-item:last-child {
+    border-bottom: none;
+  }
+
+  .organizers-page-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .organizers-page-grid {
+    grid-template-columns: 1fr;
+  }
+}

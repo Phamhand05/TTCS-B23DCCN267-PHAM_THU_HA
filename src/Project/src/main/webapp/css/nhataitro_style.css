@@ -1,0 +1,70 @@
+.sponsors-heading-block {
+  margin-bottom: 18px;
+}
+.ponsors-heading-block .page-title {
+  margin: 0;
+  font-size: clamp(1.6rem, 3.5vw, 2.2rem);
+  color: #1f8a4d;
+}
+.sponsors-heading-block .page-subtitle {
+  margin-top: 8px;
+  color: #53617a;
+}
+
+.sponsors-page-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+}
+
+.sponsor-card {
+  background: #fff;
+  border: 1px solid #e8f0e9;
+  border-radius: 12px;
+  padding: 12px;
+  text-align: center;
+}
+.sponsor-card .sponsor-logo {
+  max-width: 120px;
+  max-height: 60px;
+  object-fit: contain;
+  margin: 0 auto 8px;
+  display: block;
+}
+.sponsor-name {
+  font-weight: 700;
+  color: #253239;
+  margin: 6px 0;
+}
+.sponsor-description {
+  color: #606f7e;
+  font-size: 0.95rem;
+  min-height: 36px;
+}
+.sponsor-card-footer {
+  margin-top: 10px;
+  color: #57636c;
+  font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
+
+@media (max-width: 1200px) {
+  .sponsors-page-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .sponsors-page-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .sponsors-page-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
