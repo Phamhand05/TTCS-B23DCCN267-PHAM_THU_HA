@@ -40,8 +40,7 @@
 3.Lập trình logic cơ bản và tương tác DOM với JavaScript.
 
 **Bài toán / nội dung áp dụng cụ thể:**
-Xây dựng một Landing Page hoàn chỉnh (ví dụ: trang giới thiệu bản thân hoặc giao diện bán hàng) từ thiết kế Figma, đảm bảo hiển thị tốt trên Mobile/Tablet và có các hiệu ứng tương tác cơ bản bằng JS.
-
+Xây dựng trang cảm ơn những người đóng góp cho dự án.
 **Làm việc nhóm (nếu có):**
 
 ---
@@ -153,83 +152,108 @@ _Mục tiêu tuần: Bắt đầu tiếp cận JavaScript và hoàn thiện sả
 
 ### Tuần 6 – Kiểm thử & Đánh giá _(Buổi trao đổi 3)_
 
-_Mục tiêu tuần: Dùng JS để tạo tương tác cho giao diện_
+_Mục tiêu tuần: Hoàn thiện giao diện Website và đảm bảo khả năng hiển thị trên nhiều thiết bị._
 
 **Tìm hiểu / Đọc:**
+
 | Nội dung | Nguồn | Trạng thái | Ghi chú |
 |---|---|---|---|
-|DOM Manipulation | | [ ] | |
-|Event Listener (click, scroll, submit) | | [ ] | |
-|Xử lý mảng | | [ ] | |
-|Object cơ bản | | [ ] | |
+| CSS Flexbox và Grid Layout | | [X] | Áp dụng bố cục cho các trang thành viên |
+| Responsive Navigation Menu | | [X] | Thiết kế menu cho Mobile |
+| CSS Transition và Hover Effects | | [X] | Tạo hiệu ứng tương tác giao diện |
+| Tổ chức cấu trúc CSS cho dự án nhiều trang | | [X] | Chia CSS riêng cho từng trang |
 
 **Thực hành:**
+
 | Nhiệm vụ | Kết quả đầu ra | Trạng thái | Ghi chú |
 |---|---|---|---|
-|Thêm các tính năng như: Menu mobile (toggle), đóng/mở Modal, hoặc Validate form đăng nhập đơn giản | | [ ] | |
+| Hoàn thiện giao diện Trang chủ | Source Code | [X] | |
+| Hoàn thiện giao diện Ban tổ chức | Source Code | [X] | |
+| Hoàn thiện giao diện Tình nguyện viên | Source Code | [X] | |
+| Hoàn thiện giao diện Nhà tài trợ và Nhà hảo tâm | Source Code | [X] | |
+| Kiểm tra Responsive trên Desktop, Tablet, Mobile | Screenshot | [X] | |
+
+**Kết quả đạt được:**
+
+- Hoàn thiện toàn bộ giao diện Website.
+- Áp dụng Responsive Design bằng Media Queries.
+- Xây dựng menu điều hướng và hiệu ứng tương tác.
+- Tối ưu bố cục hiển thị trên nhiều kích thước màn hình.
 
 ---
 
-<!-- ### Tuần 6 – Kiểm thử & Đánh giá _(Buổi trao đổi 3)_
-
-_Mục tiêu tuần: Kiểm tra lỗi hiển thị và tối ưu hóa mã nguồn._
-
-**Tìm hiểu / Đọc:**
-| Nội dung | Nguồn | Trạng thái | Ghi chú |
-|---|---|---|---|
-|Tối ưu hóa CSS (minify) | | [ ] | |
-|Kiểm tra độ tương thích trình duyệt | | [ ] | |
-|Quy tắc viết code JS sạch (Clean Code) | | [ ] | |
-
-**Thực hành:**
-| Nhiệm vụ | Kết quả đầu ra | Trạng thái | Ghi chú |
-|---|---|---|---|
-|Refactor lại code, sửa các lỗi vỡ khung (layout) trên các thiết bị đặc thù | | [ ] | |
-
---- -->
-
 ### Tuần 7 – Hoàn thiện cuối
 
-_Mục tiêu tuần: Hoàn chỉnh sản phẩm, chuẩn bị tài liệu, dọn dẹp repo_
+_Mục tiêu tuần: Kết nối giao diện với dữ liệu và hoàn thiện chức năng Website (có ứng dụng AI)._
+
+**Tìm hiểu / Đọc:**
+
+| Nội dung | Nguồn | Trạng thái | Ghi chú |
+|---|---|---|---|
+| JSP cơ bản | | [X] | Hiển thị dữ liệu động |
+| JDBC và MySQL | | [X] | Kết nối cơ sở dữ liệu |
+| Truy vấn SQL cơ bản | | [X] | Lấy dữ liệu thống kê |
 
 **Thực hành:**
+
 | Nhiệm vụ | Kết quả đầu ra | Trạng thái | Ghi chú |
 |---|---|---|---|
-| Hoàn thiện `docs/` (ghi chú học tập) | | [ ] | |
-| Hoàn thiện `src/project/` | | [ ] | |
-| Viết README tổng kết | | [ ] | |
+| Xây dựng cơ sở dữ liệu cho Website | SQL Script | [X] | |
+| Kết nối Website với MySQL | Source Code | [X] | |
+| Hiển thị dữ liệu người đóng góp lên giao diện | Source Code | [X] | |
+| Xây dựng các chức năng thống kê | Source Code | [X] | |
+| Hoàn thiện repository GitHub | GitHub Repository | [X] | |
+
+**Kết quả đạt được:**
+
+- Thiết kế và triển khai cơ sở dữ liệu.
+- Hiển thị dữ liệu động trên các trang JSP.
+- Hoàn thiện các chức năng thống kê người đóng góp.
+- Quản lý mã nguồn bằng GitHub.
 
 ---
 
 ### Tuần 8 – Tổng kết _(Buổi trao đổi 4)_
 
-_Mục tiêu tuần: Demo, báo cáo, phản ánh lại toàn bộ quá trình_
+_Mục tiêu tuần: Kiểm thử hệ thống, hoàn thiện tài liệu và chuẩn bị báo cáo._
 
 **Thực hành:**
+
 | Nhiệm vụ | Kết quả đầu ra | Trạng thái | Ghi chú |
 |---|---|---|---|
-| Demo / báo cáo cuối kỳ | Demo URL / Report | [ ] | |
+| Hoàn thiện tài liệu mô tả dự án | Documentation | [X] | |
+| Hoàn thiện README Repository | README.md | [X] | |
+| Chuẩn bị Demo và báo cáo cuối kỳ | Slide / Report | [ ] | |
 
 > **Phản ánh cuối kỳ:**
 >
-> - Kỹ năng nào tôi thực sự đã học và hiểu được?
-> - Nếu làm lại, tôi sẽ thay đổi gì trong kế hoạch?
-> - Kỹ năng này hữu ích như thế nào cho định hướng nghề nghiệp của tôi?
+> - Kỹ năng tôi đã học được: HTML5, CSS3, Responsive Design.
+> - Tôi hiểu rõ hơn quy trình xây dựng một Website hoàn chỉnh từ giao diện đến dữ liệu.
+> - Nếu thực hiện lại, tôi sẽ dành nhiều thời gian hơn cho JavaScript và tối ưu kiến trúc MVC.
+> - Những kiến thức này là nền tảng quan trọng cho định hướng trở thành Frontend Developer trong tương lai.
 
----
+**Sản phẩm hoàn thành:**
 
+- Website giới thiệu dự án cộng đồng "Ánh Sáng Yêu Thương".
+- Trang chủ.
+- Trang Ban tổ chức.
+- Trang Tình nguyện viên.
+- Trang Nhà tài trợ.
+- Trang Nhà hảo tâm.
+- Hệ thống thống kê dữ liệu người đóng góp.
+- Kết nối cơ sở dữ liệu MySQL.
 ## 5. Checklist & Tổng kết
 
-- [ ] Nộp kế hoạch trước **23/02/2026**
-- [ ] Tham gia đủ **04 buổi trao đổi**
-- [ ] Cập nhật `timeline-08tuan.md` **mỗi tuần**
-- [ ] Có ghi chú tìm hiểu trong `docs/` (ít nhất 4 tuần)
-- [ ] Sản phẩm cuối chạy được / demo được
+- [x] Nộp kế hoạch trước **23/02/2026**
+- [x] Tham gia đủ **04 buổi trao đổi**
+- [x] Cập nhật `timeline-08tuan.md` **mỗi tuần**
+- [x] Có ghi chú tìm hiểu trong `docs/` (ít nhất 4 tuần)
+- [x] Sản phẩm cuối chạy được / demo được
 - [ ] Có thể **giải thích** những gì đã làm mà không cần nhìn code
 
-**Tự đánh giá mức độ hoàn thành:** ……%
+**Tự đánh giá mức độ hoàn thành:** 75%
 
-**Điều tôi tự hào nhất trong đợt thực tập này:**
+**Điều tôi tự hào nhất trong đợt thực tập này:*Đã tạo ra được 1 sản phẩm cụ thể, áp dụng được kiến thức vào dự án*
 
 **Vướng mắc / nội dung cần giảng viên hỗ trợ thêm:**
 
